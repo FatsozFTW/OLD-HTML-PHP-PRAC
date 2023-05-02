@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Web Store</title>
+    <script type = "text/javascript" src = "formChecker.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <form action = "customerBackend.php" onsubmit="return verify()" method=post>
+      <h2> Enter your credentials: </h2>
+      Enter Username: <input type = "text" id="pass1" name="user">
+      <br>
+      Enter password: <input type = "text" id="pass2" name="pass">
+      <br>
+      <h3> Items in stock </h3>
+        <p class = stk> Keyboard Base </p>
+        Qt: <input type="text" id="base1" name="q1" value="0"> Polycarbonate - $100<br>
+        Qt: <input type="text" id="base2" name="q2" value="0"> Aluminum - $200 <br>
+
+        <p class = stk> Keyboard Pcb </p>
+        Qt: <input type="text" id="pcb1" name="q3" value="0"> hotswap - $35 <br>
+        Qt: <input type="text" id="pcb2" name="q4" value="0"> solder - $30 <br>
+
+        <p class = stk> Keyboard Plate </p>
+        Qt: <input type="text" id="plate1" name="q5" value="0"> PC - $38 <br>
+        Qt: <input type="text" id="plate2" name="q6" value="0"> Carbon Fiber - $40 <br>
+        Qt: <input type="text" id="plate3" name="q7" value="0"> Fr4 - $45 <br>
+        Qt: <input type="text" id="plate4" name="q8" value="0"> Aluminum - $20 <br>
+      <h3> Shipping Options </h3>
+        <input type="radio" id="ship1" name="q9" value="0"> Free 7 day - Free <br>
+        <p1 class="small"> &emsp; &emsp; 7-10 business day </p1> <br>
+        <input type="radio" id="ship2" name="q9" value="50"> Over night - $50 <br>
+        <p1 class="small"> &emsp; &emsp; 1 business day </p1> <br>
+        <input type="radio" id="ship3" name="q9" value="5"> Three day - $5 <br>
+        <p1 class="small"> &emsp; &emsp; 3-5 business day </p1> <br> <br>
+        <input type="submit" value="SUBMIT"> <br>
+    </form>
+
+    <form action = "https://people.eecs.ku.edu/~j654t520/customerFrontend.html">
+      <input type="submit" value = "RESET"/>
+    </form>
+  </body>
+</html>
